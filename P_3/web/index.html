@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                gap:2rem;
+            }
+
+            .button-24 {
+                background: #3cdfff;
+                border: 1px solid #3cdfff;
+                border-radius: 6px;
+                box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+                box-sizing: border-box;
+                color: #FFFFFF;
+                cursor: pointer;
+                display: inline-block;
+                font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 16px;
+                min-height: 40px;
+                outline: 0;
+                padding: 12px 24px;
+                text-align: center;
+                margin-bottom: 5px;
+                text-transform: none;
+                vertical-align: middle;
+            }
+
+       
+
+            .button-24:active {
+                opacity: .5;
+            }
+
+         
+
+            .form-container{
+                display:flex;
+                align-items: center;
+                padding:10px;
+                margin:0;
+            }
+
+            .deleteForm input,.viewForm input{
+                height: 100%;
+                outline:none;
+                border:none;
+                margin-bottom: 2px;
+
+            }
+            h2{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body> 
+        <h2>Select</h2>
+        <div class="container">
+
+            <a href="add.html"><button class="button-24">Add Record</button></a>
+            <a href="update.html"><button class="button-24">Update Record</button></a>
+            <a href="delete.html">
+                <button class="button-24">Delete Record</button>
+            </a>
+            <div class="form-container">
+                <a href="search.html">
+                    <button class="button-24">Show Record</button>
+                </a>
+            </div>
+                <a href="view.html">
+                    <button class="button-24">Show All Record</button>
+                    
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

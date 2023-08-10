@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<style type="text/css">
+		body{  
+  				font-family: Calibri, Helvetica, sans-serif;  
+  			}  
+		.container {  
+			    padding: 50px;  
+			  background-color: #3cdfff;  
+			}  
+		input[type=text], input[type=number],input[type=date],textarea,select {  
+			  width: 100%;  
+			  padding: 15px;  
+			  margin: 5px 0 20px 0;  
+			  display: inline-block;  
+			  border: none;  
+			  background: #f1f1f1; 
+			  font-size: 14px; 
+			}  
+		label
+		{
+			font-family: Calibri, Helvetica, sans-serif;
+			font-size: 20px;
+		}
+ 		div {  
+            padding: 10px 0;  
+        }  
+		hr {  
+  			border: 1px solid #f1f1f1;  
+  			margin-bottom: 25px;  
+		}  
+		.registerbtn {  
+				font-size: 20px;
+			  background-color: #4CAF50;  
+			  color: white;  
+			  padding: 16px 20px;  
+			  margin: 8px 0;  
+			  border: none;
+			  border-radius: 30px;  
+			  cursor: pointer;  
+			  width: 100%;  
+			  opacity: 0.9;  
+			}  
+</style>
+
+</head>
+<body>
+	<form action="add" method="post">
+		<div class="container"> 
+			<center>  <h1> Add Student Registration Form</h1> </center>  
+  			<hr>  
+  			
+  			<label> ID: </label>   
+			<input type="number" name="id" placeholder= "Id" size="14" required />   
+			<label> Name: </label>   
+			<input type="text" name="name" placeholder="Name" size="15" required />   
+			<label> Email: </label>    
+			<input type="text" name="email" placeholder="Email" required />   
+			<label> Branch: </label>
+			<select name="branch">
+				<option value="sb" disabled>Select Branch</option>
+				<option value="CP">CP</option>
+				<option value="IT">IT</option>
+				<option value="EC">EC</option>
+				<option value="EE">EE</option>
+				<option value="ME">ME</option>
+				<option value="IOT">IOT</option>
+				<option value="CSD">CSD</option>
+			</select>
+		
+		<div style="font-size: 18px;">  
+			<label>	Gender: </label><br>  
+			<input type="radio" value="Male" name="gender"> Male   
+			<input type="radio" value="Female" name="gender"> Female   
+			<input type="radio" value="Other" name="gender"> Other  
+			  
+		</div> 
+		<label> DOB: </label>    
+			<input type="date" name="dob" placeholder="DOB" required>   
+		<div style="font-size: 18px;">
+			<label>	Year: </label><br>  
+			<input type="radio" value="FY" name="year"> FY   
+			<input type="radio" value="SY" name="year"> SY   
+			<input type="radio" value="TY" name="year"> TY
+			<input type="radio" value="LY" name="year"> LY  
+		</div>	
+		<label> Phone: </label>  
+		<input type="number" name="phone" placeholder="Phone no." size="10"/ required> <br><br>  
+		
+
+    <button type="submit" class="registerbtn" name="add_query">Add</button> 
+    </div>   
+	</form>
+
+</body>
+</html>
